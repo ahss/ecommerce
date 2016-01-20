@@ -57,7 +57,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
 	#centraliza os templates na pasta templates, se tirar, ele sai procurando pela pasta templates de cada app
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+	#os.path.join(BASE_DIR, 'templates')
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
