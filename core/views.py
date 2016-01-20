@@ -5,6 +5,6 @@ from django.shortcuts import render
 
 def hello(request):
     context = {
-        'texto': 'Shiro'
+        'categories': ['kids', 'fashion', 'bags', 'shoes']
     }
     return render(request, 'core/index.html', context)
